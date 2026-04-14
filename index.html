@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ning Wang</title>
+<style>
+  :root {
+    --fg: #1a1a1a;
+    --muted: #666;
+    --accent: #b31b1b;
+    --bg: #fdfdfd;
+    --border: #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  h1 { margin: 0 0 0.25rem; font-size: 2rem; }
+  .subtitle { color: var(--muted); margin: 0; }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.3rem;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .links { margin-top: 0.75rem; }
+  .links a { margin-right: 1rem; font-size: 0.95rem; }
+  .paper { margin-bottom: 1.25rem; }
+  .paper-title { font-weight: 600; }
+  .paper-venue { color: var(--muted); font-size: 0.9rem; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ning Wang</h1>
+  <p class="subtitle">Researcher, Cornell University</p>
+  <div class="links">
+    <a href="mailto:nw366@cornell.edu">nw366@cornell.edu</a>
+    <a href="https://www.linkedin.com/in/ning-wang-874037238/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/NingWang0123" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>
+    I am a researcher at Cornell University working on data management,
+    machine learning systems, and benchmarks for autonomous research agents.
+    My recent work focuses on learned methods for joining heterogeneous
+    tabular data and on evaluating LLM-based agents on realistic research
+    tasks.
+  </p>
+</section>
+
+<section>
+  <h2>Publications</h2>
+
+  <div class="paper">
+    <div class="paper-title">
+      <a href="https://arxiv.org/abs/2512.02444" target="_blank" rel="noopener">
+        Pruning Minimal Reasoning Graphs for Efficient Retrieval-Augmented Generation
+      </a>
+    </div>
+    <div class="paper-venue">
+      Ning Wang, Kuanyan Zhu, Daniel Yuehwoon Yee, Yitang Gao, Shiying Huang, Zirun Xu, Sainyam Galhotra.
+      arXiv:2512.02444, 2025.
+    </div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">
+      <a href="https://arxiv.org/abs/2602.04926" target="_blank" rel="noopener">
+        QJoin: Transformation-aware Joinable Data Discovery Using Reinforcement Learning
+      </a>
+    </div>
+    <div class="paper-venue">
+      Ning Wang, Sainyam Galhotra.
+      arXiv:2602.04926.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>
+    Email: <a href="mailto:nw366@cornell.edu">nw366@cornell.edu</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/ning-wang-874037238/" target="_blank" rel="noopener">ning-wang-874037238</a>
+  </p>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> Ning Wang
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
