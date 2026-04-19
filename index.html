@@ -58,7 +58,16 @@
     font-size: 3.5rem;
     font-weight: 600;
     box-shadow: 0 4px 20px rgba(179, 27, 27, 0.15);
+    overflow: hidden;
+    position: relative;
   }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .avatar .initials { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
   .name {
     font-family: var(--serif);
     font-size: 2.6rem;
@@ -206,7 +215,10 @@
 <div class="container">
 
   <header class="hero">
-    <div class="avatar" aria-hidden="true">NW</div>
+    <div class="avatar" aria-hidden="true">
+      <span class="initials">NW</span>
+      <img src="profile.jpg" alt="Ning Wang" onerror="this.style.display='none'">
+    </div>
     <div>
       <h1 class="name">Ning Wang</h1>
       <p class="tagline">
@@ -250,6 +262,23 @@
 
       <div class="pub">
         <div class="pub-title">
+          <a href="https://youarespecialtome.github.io/ResearchArena/" target="_blank" rel="noopener">
+            Research Arena: How Far Are We From True Auto Research?
+          </a>
+        </div>
+        <div class="pub-authors">
+          Zhengxin Zhang<sup>*</sup>, <span class="me">Ning Wang</span><sup>*</sup>,
+          Sainyam Galhotra, Claire Cardie
+        </div>
+        <div class="pub-venue">Preprint, 2026 &middot; <span style="font-style: normal;">*equal contribution</span></div>
+        <div class="pub-links">
+          <a href="https://youarespecialtome.github.io/ResearchArena/" target="_blank" rel="noopener">Project</a>
+          <a href="https://github.com/YouAreSpecialToMe/ResearchArena" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">
           <a href="https://arxiv.org/abs/2512.02444" target="_blank" rel="noopener">
             QJoin: Transformation-aware Joinable Data Discovery Using Reinforcement Learning
           </a>
@@ -278,6 +307,7 @@
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2602.04926" target="_blank" rel="noopener">arXiv</a>
           <a href="https://arxiv.org/pdf/2602.04926" target="_blank" rel="noopener">PDF</a>
+          <a href="https://github.com/NingWang0123/AutoPrunedRetriever" target="_blank" rel="noopener">Code</a>
         </div>
       </div>
 
